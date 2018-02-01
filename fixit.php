@@ -18,7 +18,7 @@ if (mysqli_connect_errno())
   }
 
 foreach($postids as $val){
-    $query = "INSERT INTO pland_postmeta (post_id,meta_key) VALUES('".$val."','_yith_wcbm_product_meta')";
+    $query = "INSERT INTO wp_postmeta (post_id,meta_key) VALUES('".$val."','_yith_wcbm_product_meta')";
     mysqli_query($con,$query);
     echo 'updated ' . $val;
 }
