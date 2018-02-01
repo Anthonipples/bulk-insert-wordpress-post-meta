@@ -9,7 +9,7 @@ $servername = "db";
 $username = "db";
 $password = "db";
 
-$con = mysqli_connect($servername,$username,$password,"plastrytey_wpdb");
+$con = mysqli_connect($servername,$username,$password,"db");
 
 // Check connection
 if (mysqli_connect_errno())
